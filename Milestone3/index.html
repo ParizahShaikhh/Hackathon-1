@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div id="resume-builder">
+        <h1>Interactive Resume Builder</h1>
+        <form id="resume-form">
+            <fieldset class="p-i-field">
+            <h3>Personal Information</h3>
+            <label for="name">First Name:<br /></label>
+            <input type="text" id="name" placeholder="Enter your first name" required><br />
+    
+            <label for="name">Last Name:<br /></label>
+            <input type="text" id="name" placeholder="Enter your last name" required><br />
+    
+            <label for="text">Professional Headline:<br /></label>
+            <input type="text" id="text" placeholder="Enter your professional headline e.g. Software developer" required><br />
+    
+            <label for="email">Email Address:<br /></label>
+            <input type="email" id="email" placeholder="Enter your email" required><br />
+    
+            <label for="number">Phone Number:<br /></label>
+            <input type="number" id="number" placeholder="Enter your phone number" required><br />
+    
+            <label for="text">Address:<br /></label>
+            <input type="text" id="text" placeholder="Enter your Address" required><br />
+            </fieldset><br />
+    
+            <fieldset class="edu-field">
+            <h3>Education:</h3>
+            <label for="text">Degree/Qualification:<br /></label>
+            <input type="text" id="text" placeholder="Enter name of degree e.g. Bachelor of science in Computer Science" required><br />
+    
+            <label for="text">Institution Name:<br /></label>
+            <input type="text" id="text" placeholder="Enter name of Institution e.g. University of XYZ" required><br />
+    
+            <label for="Location">Location:<br /></label>
+            <input type="text" id="text" placeholder="Enter City, Country" required><br />
+    
+            <label for="Dates">Start Date:<br /></label>
+            <input type="date" required><br />
+            
+            <label for="Dates">End Date/Expected:<br /></label>
+            <input type="date" required><br />
+
+            </fieldset><br />
+
+
+            <fieldset class="skill-field">
+            <h3>Skills:</h3>
+            
+            <input type="" id="name" placeholder="Enter your skills here e.g. Graphic Designer, Developer" required><br />
+
+            </fieldset><br />
+
+            <!-- <div class="chip">
+                <img src="profile-pic.jpeg" alt="Person" width="96" height="96">Parizah Shaikh
+            </div> -->
+            
+    
+    
+            <fieldset class="exp-field">
+            <h3>Experience:</h3>
+            <label for="experience">Company:<br /></label>
+            <input id="text" placeholder="Enter Company Name" required><br />
+    
+            <label for="Dates">Start Date:<br /></label>
+            <input type="date" required><br />
+            
+            <label for="Dates">End Date:<br /></label>
+            <input type="date">
+
+            </fieldset>
+            
+    
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <h3>Select Profile Picture:</h3>
+                <input type="file" id="profilePic" name="profilePic" accept="image/*" required>
+                
+            </form>
+    
+            <button type="submit">Generate Resume</button>
+        </form>
+        
+        </div>
+    </div>
+    <div id="resume-output">
+        <h2>Your Resume</h2>
+        <div id="resume-content">
+            <!-- Resume content will be dynamically generated here -->
+             
+
+
+        </div>
+
+    <footer id="footer">
+        &copy; 2024 Interactive Resume Builder. All rights reserved.
+    </footer>
+    
+   
+    <script src="app.js"></script>
+</body>
+</html>
