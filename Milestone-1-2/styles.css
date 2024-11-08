@@ -203,3 +203,20 @@ body {
     outline: none;
     box-shadow: 0 0 8px rgba(0, 173, 181, 0.6);
 }
+
+#profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #eeeeee;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#header {
+    text-align: center;
+}
+
+#header h1, #header h2, #header p {
+    margin-top: 10px;
+} 
