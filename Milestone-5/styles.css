@@ -42,6 +42,7 @@ h2 {
     display: block;
     margin-bottom: 8px;
     font-weight: 600;
+    color: #222831;
 }
 
 #resume-form input,
@@ -95,17 +96,18 @@ h2 {
 #name-output {
     font-size: 1.8rem;
     font-weight: 700;
+    color: #2a2a2a;
 }
 
 #title-output {
     font-size: 1.2rem;
     font-weight: 500;
-    color: #777;
+    color: #555;
 }
 
 #about-output {
     font-size: 1rem;
-    color: #555;
+    color: #333;
 }
 
 /* Skills, Experience, Education Sections */
@@ -162,27 +164,17 @@ h2 {
     }
 }
 
-#editButton {
+/* Button Styles */
+#editButton, #backButton, #shareLinkButton, #download-pdf, #gen-resume {
     background-color: #2a2a2a;
     color: #00adb5;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
 }
 
-#backButton {
-    background-color: #2a2a2a;
-    color: #00adb5;
-}
-
-#shareLinkButton {
-    background-color: #2a2a2a;
-    color: #00adb5;
-}
-
-#download-pdf {
-    background-color: #2a2a2a;
-    color: #00adb5;
-}
-
-#gen-resume {
-    background-color: #2a2a2a;
-    color: #00adb5;
+#editButton:hover, #backButton:hover, #shareLinkButton:hover, #download-pdf:hover, #gen-resume:hover {
+    background-color: #222831;
 }
